@@ -453,6 +453,88 @@
             font-size: 0.9rem;
         }
 
+        /* Specifications Section */
+        .specifications {
+            margin: 3rem 0;
+        }
+
+        .specifications h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .spec-list {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            border-left: 4px solid var(--green-primary);
+            list-style: none;
+            margin: 0;
+        }
+
+        .spec-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .spec-list li:last-child {
+            border-bottom: none;
+        }
+
+        .spec-list li::before {
+            content: '•';
+            color: var(--green-primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 0.75rem;
+        }
+
+        .spec-list li strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: flex-start;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--green-primary) 0%, var(--green-secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            padding: 8px;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .social-icon img {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+        }
+
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, var(--surface) 0%, white 100%);
@@ -751,6 +833,31 @@
                 margin: 0 auto 1rem;
             }
 
+            .specifications {
+                margin: 2rem 0;
+            }
+
+            .specifications h3 {
+                font-size: 1.6rem;
+                text-align: center;
+                margin-bottom: 1.25rem;
+            }
+
+            .spec-list {
+                padding: 1.5rem;
+            }
+
+            .spec-list li {
+                font-size: 1rem;
+                padding: 0.6rem 0;
+                padding-left: 1.25rem;
+            }
+
+            .social-icons {
+                justify-content: center;
+                margin: 1.5rem 0;
+            }
+
             .cta-section {
                 padding: 2rem 1.5rem;
                 margin: 2rem 0;
@@ -919,6 +1026,20 @@
 
             .feature-desc {
                 font-size: 0.85rem;
+            }
+
+            .specifications h3 {
+                font-size: 1.4rem;
+            }
+
+            .spec-list {
+                padding: 1.25rem;
+            }
+
+            .spec-list li {
+                font-size: 0.95rem;
+                padding: 0.5rem 0;
+                padding-left: 1rem;
             }
 
             .cta-section {
@@ -1240,33 +1361,15 @@
 
             <!-- Specifications -->
             <div class="specifications animate-on-scroll">
-                <h3>Technical Specifications</h3>
-                <div class="spec-grid">
-                    <div class="spec-item">
-                        <span class="spec-label">Material</span>
-                        <span class="spec-value">Glow PLA & Standard PLA</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Power</span>
-                        <span class="spec-value">USB-Powered LED</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Dimensions</span>
-                        <span class="spec-value">Compact Heart Size</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Weight</span>
-                        <span class="spec-value">Lightweight</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Colors</span>
-                        <span class="spec-value">Customizable Options</span>
-                    </div>
-                    <div class="spec-item">
-                        <span class="spec-label">Customization</span>
-                        <span class="spec-value">Initials/Dates/Symbols</span>
-                    </div>
-                </div>
+                <h3>📋 Technical Specifications</h3>
+                <ul class="spec-list">
+                    <li><strong>Material:</strong> Glow PLA & Standard PLA</li>
+                    <li><strong>Power:</strong> USB-Powered LED</li>
+                    <li><strong>Dimensions:</strong> Compact Heart Size</li>
+                    <li><strong>Weight:</strong> Lightweight</li>
+                    <li><strong>Colors:</strong> Customizable Options</li>
+                    <li><strong>Customization:</strong> Initials/Dates/Symbols</li>
+                </ul>
             </div>
 
             <!-- Use Cases -->
@@ -1301,7 +1404,7 @@
                 <h3>Light up your love story</h3>
                 <p>Order your Heart Shaped Lamp Set today and create a glowing moment!</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/p/24657143277209658/918484832448" class="btn btn-primary">
+                    <a href="https://wa.me/p/24142833892000132/918484832448" class="btn btn-primary">
                         📱 Order on WhatsApp
                     </a>
                     <a href="#contact" class="btn btn-secondary">
